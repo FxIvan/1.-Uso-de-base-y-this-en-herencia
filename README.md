@@ -3,8 +3,10 @@
 Explicación
 
 base: se usa para llamar miembros de la clase padre (constructores, métodos). Ejemplo: : base(nombre) o base.Mostrar().
+
 Pregunta a CHATGPT: Consulta, como es que base sabe a que metodo llamo? Por ejmplo en el codigo puedo tener mas de una funcion Mostrar(): using System;
 RESPUESTA
+
 ```
 La clave está en cómo funciona resolución de métodos en C# con herencia, sobrecarga y sobrescritura.
 
@@ -76,6 +78,7 @@ Si hay varias versiones (overloads), el compilador decide cuál en tiempo de com
 
 override + base es el patrón típico para extender la lógica del padre sin reescribirla toda.
 ```
+
 this: se refiere al objeto actual, sirve para distinguir propiedades/variables o pasarse como referencia. Ejemplo: this.Edad.
 
 Constructores y finalizadores: se ejecutan en orden jerárquico:
